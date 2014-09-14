@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Deck.h"
 
 @interface DeckTestCase : XCTestCase
 
@@ -26,9 +27,12 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testDrawCardFromEmptyDeckAnswersNoCard
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    Deck *deck = [[Deck alloc] init];
+    Card *drawnCard = [deck drawRandomCard];
+    XCTAssertNil(drawnCard, @"Should not crash; just answer a nil object");
 }
+
 
 @end

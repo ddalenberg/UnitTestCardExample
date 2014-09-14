@@ -20,7 +20,13 @@
 		0D24CEDD19C27536009AD9F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D24CEBC19C27535009AD9F4 /* Foundation.framework */; };
 		0D24CEDE19C27536009AD9F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D24CEC019C27535009AD9F4 /* UIKit.framework */; };
 		0D24CEE619C27536009AD9F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D24CEE419C27536009AD9F4 /* InfoPlist.strings */; };
-		0D24CEE819C27536009AD9F4 /* UnitTestCardExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEE719C27536009AD9F4 /* UnitTestCardExampleTests.m */; };
+		0D24CEF419C2AB1C009AD9F4 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEF319C2AB1C009AD9F4 /* Card.m */; };
+		0D24CEF719C2B19E009AD9F4 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEF619C2B19E009AD9F4 /* PlayingCard.m */; };
+		0D24CEFA19C2B237009AD9F4 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEF919C2B237009AD9F4 /* Deck.m */; };
+		0D24CEFD19C2B42B009AD9F4 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEFC19C2B42B009AD9F4 /* PlayingCardDeck.m */; };
+		0D24CEFF19C3536C009AD9F4 /* CardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEFE19C3536C009AD9F4 /* CardTestCase.m */; };
+		0DAF064A19C56BCA00AE2AB7 /* PlayingCardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF064919C56BCA00AE2AB7 /* PlayingCardTestCase.m */; };
+		0DAF064C19C5748000AE2AB7 /* DeckTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF064B19C5748000AE2AB7 /* DeckTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +58,17 @@
 		0D24CEDB19C27536009AD9F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0D24CEE319C27536009AD9F4 /* UnitTestCardExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTestCardExampleTests-Info.plist"; sourceTree = "<group>"; };
 		0D24CEE519C27536009AD9F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0D24CEE719C27536009AD9F4 /* UnitTestCardExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestCardExampleTests.m; sourceTree = "<group>"; };
+		0D24CEF219C2AB1C009AD9F4 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		0D24CEF319C2AB1C009AD9F4 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		0D24CEF519C2B19E009AD9F4 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		0D24CEF619C2B19E009AD9F4 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		0D24CEF819C2B237009AD9F4 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		0D24CEF919C2B237009AD9F4 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		0D24CEFB19C2B42B009AD9F4 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		0D24CEFC19C2B42B009AD9F4 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		0D24CEFE19C3536C009AD9F4 /* CardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTestCase.m; sourceTree = "<group>"; };
+		0DAF064919C56BCA00AE2AB7 /* PlayingCardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardTestCase.m; sourceTree = "<group>"; };
+		0DAF064B19C5748000AE2AB7 /* DeckTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +128,7 @@
 		0D24CEC219C27535009AD9F4 /* UnitTestCardExample */ = {
 			isa = PBXGroup;
 			children = (
+				0D24CEF119C2757B009AD9F4 /* Models */,
 				0D24CECB19C27535009AD9F4 /* PCSAppDelegate.h */,
 				0D24CECC19C27535009AD9F4 /* PCSAppDelegate.m */,
 				0D24CECE19C27536009AD9F4 /* Main.storyboard */,
@@ -137,8 +154,10 @@
 		0D24CEE119C27536009AD9F4 /* UnitTestCardExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				0D24CEE719C27536009AD9F4 /* UnitTestCardExampleTests.m */,
 				0D24CEE219C27536009AD9F4 /* Supporting Files */,
+				0D24CEFE19C3536C009AD9F4 /* CardTestCase.m */,
+				0DAF064919C56BCA00AE2AB7 /* PlayingCardTestCase.m */,
+				0DAF064B19C5748000AE2AB7 /* DeckTestCase.m */,
 			);
 			path = UnitTestCardExampleTests;
 			sourceTree = "<group>";
@@ -150,6 +169,21 @@
 				0D24CEE419C27536009AD9F4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D24CEF119C2757B009AD9F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D24CEF219C2AB1C009AD9F4 /* Card.h */,
+				0D24CEF319C2AB1C009AD9F4 /* Card.m */,
+				0D24CEF519C2B19E009AD9F4 /* PlayingCard.h */,
+				0D24CEF619C2B19E009AD9F4 /* PlayingCard.m */,
+				0D24CEF819C2B237009AD9F4 /* Deck.h */,
+				0D24CEF919C2B237009AD9F4 /* Deck.m */,
+				0D24CEFB19C2B42B009AD9F4 /* PlayingCardDeck.h */,
+				0D24CEFC19C2B42B009AD9F4 /* PlayingCardDeck.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +287,10 @@
 				0D24CED319C27536009AD9F4 /* PCSViewController.m in Sources */,
 				0D24CEC919C27535009AD9F4 /* main.m in Sources */,
 				0D24CECD19C27535009AD9F4 /* PCSAppDelegate.m in Sources */,
+				0D24CEF719C2B19E009AD9F4 /* PlayingCard.m in Sources */,
+				0D24CEFD19C2B42B009AD9F4 /* PlayingCardDeck.m in Sources */,
+				0D24CEFA19C2B237009AD9F4 /* Deck.m in Sources */,
+				0D24CEF419C2AB1C009AD9F4 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D24CEE819C27536009AD9F4 /* UnitTestCardExampleTests.m in Sources */,
+				0DAF064A19C56BCA00AE2AB7 /* PlayingCardTestCase.m in Sources */,
+				0DAF064C19C5748000AE2AB7 /* DeckTestCase.m in Sources */,
+				0D24CEFF19C3536C009AD9F4 /* CardTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +497,7 @@
 				0D24CEED19C27536009AD9F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D24CEEE19C27536009AD9F4 /* Build configuration list for PBXNativeTarget "UnitTestCardExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +506,7 @@
 				0D24CEF019C27536009AD9F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
