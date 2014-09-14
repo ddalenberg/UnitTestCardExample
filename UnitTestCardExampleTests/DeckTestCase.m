@@ -34,5 +34,14 @@
     XCTAssertNil(drawnCard, @"Should not crash; just answer a nil object");
 }
 
+- (void)testOneCardDeckShouldAnswerThatCard
+{
+    Deck *deck = [[Deck alloc] init];
+    Card *card = [[Card alloc] init];
+    card.contents = @"test";
+    [deck addCard:card];
+    Card *drawnCard = [deck drawRandomCard];
+    XCTAssertEqualObjects(card, drawnCard, @"Should have drawn the same card we added.");
+}
 
 @end
