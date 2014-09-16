@@ -61,4 +61,21 @@
     XCTAssertNotEqualObjects(drawnCard1, drawnCard2, @"The cards must be different");
 }
 
+- (void)testFailure
+{
+    Deck *deck = [[Deck alloc] init];
+    Card *card1 = [[Card alloc] init];
+    card1.contents = @"one";
+    Card *card2 = [[Card alloc] init];
+    card2.contents = @"two";
+    [deck addCard:card1];
+    [deck addCard:card2];
+    Card *drawnCard1 = [deck drawRandomCard];
+    Card *drawnCard2 = [deck drawRandomCard];
+    XCTAssertNotNil(drawnCard1, @"Should have found a card");
+    XCTAssertNotNil(drawnCard2, @"Other card should have been found too")
+    ;
+    XCTAssertEqualObjects(drawnCard1, drawnCard2, @"The cards are equal - what happened?");
+}
+
 @end
