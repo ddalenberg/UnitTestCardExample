@@ -61,6 +61,7 @@
     XCTAssertNotEqualObjects(drawnCard1, drawnCard2, @"The cards must be different");
 }
 
+/*
 - (void)testFailure
 {
     Deck *deck = [[Deck alloc] init];
@@ -78,4 +79,5 @@
     XCTAssertEqualObjects(drawnCard1, drawnCard2, @"The cards are equal - what happened?");
 }
 
+*/
 @end
