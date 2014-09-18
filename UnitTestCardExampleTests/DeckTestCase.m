@@ -61,7 +61,30 @@
     XCTAssertNotEqualObjects(drawnCard1, drawnCard2, @"The cards must be different");
 }
 
-/*
+- (void)testDeckWithMultipleCardsWillRandomlyDrawThemAll
+{
+    Deck *deck = [[Deck alloc] init];
+    int numberOfCards = 16;  // arbitrary number > 1
+    Card *card;
+    for (int index = 0; index < numberOfCards; index++)
+    {
+        card = [[Card alloc] init];
+        card.contents = [NSString stringWithFormat:@"%d", index];
+        [deck addCard:card];
+    }
+    Card *randomlyDrawnCard;
+    for (int index = 0; index < numberOfCards; index++)
+    {
+        randomlyDrawnCard = [deck drawRandomCard];
+        XCTAssertNotNil(randomlyDrawnCard, @"Should have found a card.");
+    }
+    randomlyDrawnCard = [deck drawRandomCard];
+    XCTAssertNil(randomlyDrawnCard, @"No more cards left.");
+}
+
+
+
+
 - (void)testFailure
 {
     Deck *deck = [[Deck alloc] init];
@@ -79,5 +102,5 @@
     XCTAssertEqualObjects(drawnCard1, drawnCard2, @"The cards are equal - what happened?");
 }
 
-*/
+
 @end

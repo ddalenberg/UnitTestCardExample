@@ -25,6 +25,7 @@
 		0D24CEFA19C2B237009AD9F4 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEF919C2B237009AD9F4 /* Deck.m */; };
 		0D24CEFD19C2B42B009AD9F4 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEFC19C2B42B009AD9F4 /* PlayingCardDeck.m */; };
 		0D24CEFF19C3536C009AD9F4 /* CardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D24CEFE19C3536C009AD9F4 /* CardTestCase.m */; };
+		0D33038719CB978C00E69FF3 /* Playing CardDeckTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D33038619CB978C00E69FF3 /* Playing CardDeckTestCase.m */; };
 		0DAF064A19C56BCA00AE2AB7 /* PlayingCardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF064919C56BCA00AE2AB7 /* PlayingCardTestCase.m */; };
 		0DAF064C19C5748000AE2AB7 /* DeckTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF064B19C5748000AE2AB7 /* DeckTestCase.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		0D24CEFB19C2B42B009AD9F4 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		0D24CEFC19C2B42B009AD9F4 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		0D24CEFE19C3536C009AD9F4 /* CardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTestCase.m; sourceTree = "<group>"; };
+		0D33038619CB978C00E69FF3 /* Playing CardDeckTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Playing CardDeckTestCase.m"; sourceTree = "<group>"; };
 		0DAF064919C56BCA00AE2AB7 /* PlayingCardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardTestCase.m; sourceTree = "<group>"; };
 		0DAF064B19C5748000AE2AB7 /* DeckTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 				0D24CEFE19C3536C009AD9F4 /* CardTestCase.m */,
 				0DAF064919C56BCA00AE2AB7 /* PlayingCardTestCase.m */,
 				0DAF064B19C5748000AE2AB7 /* DeckTestCase.m */,
+				0D33038619CB978C00E69FF3 /* Playing CardDeckTestCase.m */,
 			);
 			path = UnitTestCardExampleTests;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				0DAF064A19C56BCA00AE2AB7 /* PlayingCardTestCase.m in Sources */,
 				0DAF064C19C5748000AE2AB7 /* DeckTestCase.m in Sources */,
+				0D33038719CB978C00E69FF3 /* Playing CardDeckTestCase.m in Sources */,
 				0D24CEFF19C3536C009AD9F4 /* CardTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
